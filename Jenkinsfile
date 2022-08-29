@@ -11,7 +11,7 @@ node {
     sh ("docker run -d -p 8086:80 testproject")
   }
   
-  stage("Remove old images" {
+  stage("Remove old images") {
     // remove docker old images
     sh("docker rmi testproject:latest -f")
   }
